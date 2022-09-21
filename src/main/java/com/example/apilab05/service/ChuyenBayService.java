@@ -13,4 +13,6 @@ public interface ChuyenBayService {
 
     List<ChuyenBay> findChuyenBaysDoDai();
 
+    List<ChuyenBay> findChuyenBaysFromSGToBuonMaThuoc();
+
 }

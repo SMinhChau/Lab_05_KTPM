@@ -16,4 +16,10 @@ public interface ChuyenBayRepository extends JpaRepository<ChuyenBay, String> {
             value = "SELECT * FROM chuyenbay u WHERE u.dodai<10000 and u.dodai>8000",
             nativeQuery = true)
     List<ChuyenBay> findChuyenBaysDoDai();
+
+
+    @Query(
+            value = "SELECT * FROM chuyenbay u WHERE u.gaden like N'SGN' and u.gadi like N'BMV'",
+            nativeQuery = true)
+    List<ChuyenBay> findChuyenBaysFromSGToBuonMaThuoc();
 }

@@ -46,10 +46,18 @@ class Apilab05ApplicationTests {
 //	}
 
 
+//	@Test
+//	void cau04() {
+//		System.out.println("=> Cau 04");
+//		chuyenBayService.findChuyenBaysDoDai().stream().forEach(cb -> {
+//			System.out.println(cb.toString());
+//		});
+//	}
+
 	@Test
-	void cau04() {
-		System.out.println("=> Cau 04");
-		chuyenBayService.findChuyenBaysDoDai().stream().forEach(cb -> {
+	void cau0() {
+		System.out.println("=> Cau 05");
+		chuyenBayService.findChuyenBaysFromSGToBuonMaThuoc().stream().forEach(cb -> {
 			System.out.println(cb.toString());
 		});
 	}

@@ -30,5 +30,10 @@ public class ChuyenBayImpl implements ChuyenBayService {
         return chuyenBayRepository.findChuyenBaysDoDai();
     }
 
+    @Override
+    public List<ChuyenBay> findChuyenBaysFromSGToBuonMaThuoc() {
+        return chuyenBayRepository.findChuyenBaysFromSGToBuonMaThuoc();
+    }
+
 
 }
