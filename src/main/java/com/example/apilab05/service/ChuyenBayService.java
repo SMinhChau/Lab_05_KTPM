@@ -11,4 +11,6 @@ public interface ChuyenBayService {
     List<ChuyenBay> findChuyenBaysByGaden(String gaden);
     List<ChuyenBay> findChuyenBays();
 
+    List<ChuyenBay> findChuyenBaysDoDai();
+
 }

@@ -37,12 +37,20 @@ class Apilab05ApplicationTests {
 //	}
 
 
+//	@Test
+//	void cau03() {
+//		System.out.println("=> Cau 03");
+//	nhanVienService.findNhanViensLuong().stream().forEach(nv -> {
+//			System.out.println(nv.toString());
+//		});
+//	}
+
+
 	@Test
-	void cau03() {
-		System.out.println("=> Cau 03");
-	nhanVienService.findNhanViensLuong().stream().forEach(nv -> {
-			System.out.println(nv.toString());
+	void cau04() {
+		System.out.println("=> Cau 04");
+		chuyenBayService.findChuyenBaysDoDai().stream().forEach(cb -> {
+			System.out.println(cb.toString());
 		});
 	}
-
 }

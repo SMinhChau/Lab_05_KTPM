@@ -25,6 +25,10 @@ public class ChuyenBayImpl implements ChuyenBayService {
         return chuyenBayRepository.findAll();
     }
 
+    @Override
+    public List<ChuyenBay> findChuyenBaysDoDai() {
+        return chuyenBayRepository.findChuyenBaysDoDai();
+    }
 
 
 }
