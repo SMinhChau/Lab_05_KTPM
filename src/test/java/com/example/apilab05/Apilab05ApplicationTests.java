@@ -23,6 +23,12 @@ class Apilab05ApplicationTests {
 		});
 	}
 
-
+	@Test
+	void cau02() {
+		System.out.println("=> Cau 02");
+		mayBayService.findMayBaysTamBayFrom().stream().forEach(mb -> {
+			System.out.println(mb.toString());
+		});
+	}
 
 }

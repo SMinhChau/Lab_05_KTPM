@@ -14,5 +14,8 @@ public class MayBayImpl implements MayBayService {
     @Autowired
     private MayBayRepository mayBayRepository;
 
-
+    @Override
+    public List<MayBay> findMayBaysTamBayFrom() {
+        return mayBayRepository.findMayBaysTamBayFrom();
+    }
 }
