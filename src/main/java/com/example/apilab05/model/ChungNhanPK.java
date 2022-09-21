@@ -4,9 +4,10 @@ import lombok.Data;
 
 import javax.persistence.Embeddable;
 import java.io.Serializable;
+
 @Embeddable
 @Data
 public class ChungNhanPK  implements Serializable {
-    private String nhanvien;
-    private String maybay;
+    private String manv;
+    private String mamb;
 }

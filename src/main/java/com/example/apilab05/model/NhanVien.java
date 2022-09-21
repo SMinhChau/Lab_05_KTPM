@@ -10,8 +10,8 @@ import javax.persistence.*;
 @Data
 public class NhanVien {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "manv")
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String manv;
 
     @Column(name = "ten")

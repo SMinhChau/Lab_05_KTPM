@@ -1,17 +1,22 @@
 package com.example.apilab05.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.sql.Time;
 
 @Entity
 @Table(name = "chuyenbay")
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
 public class ChuyenBay {
+
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "macb",columnDefinition = "varchar(50)")
     private String macb;
 
     @Column(name = "gadi")
