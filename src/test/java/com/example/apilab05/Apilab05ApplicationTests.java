@@ -1,6 +1,7 @@
 package com.example.apilab05;
 
 import com.example.apilab05.model.ChuyenBay;
+import com.example.apilab05.model.MayBay;
 import com.example.apilab05.repository.ChuyenBayRepository;
 import com.example.apilab05.repository.NhanVienRepository;
 import com.example.apilab05.service.ChuyenBayService;
@@ -14,14 +15,14 @@ import java.util.List;
 
 @SpringBootTest
 class Apilab05ApplicationTests {
-	@Autowired
-	private ChuyenBayService chuyenBayService;
+    @Autowired
+    private ChuyenBayService chuyenBayService;
 
-	@Autowired
-	private MayBayService mayBayService;
+    @Autowired
+    private MayBayService mayBayService;
 
-	@Autowired
-	private NhanVienService nhanVienService;
+    @Autowired
+    private NhanVienService nhanVienService;
 
 //	@Test
 //	void cau01() {
@@ -65,14 +66,24 @@ class Apilab05ApplicationTests {
 //		});
 //	}
 
-	@Test
-	void cau6() {
-		System.out.println("=> Cau 06");
-		int total=0;
-		List<ChuyenBay> list= chuyenBayService.totalsChuyenBaysFromSGN();
-		for (ChuyenBay cb: list) {
-		total++;
-		}
-		System.out.println("Tổng chuyến bay xuất phát từ Sài Gòn (SGN):" +total);
-	}
+    //	@Test
+//	void cau6() {
+//		System.out.println("=> Cau 06");
+//		int total=0;
+//		List<ChuyenBay> list= chuyenBayService.totalsChuyenBaysFromSGN();
+//		for (ChuyenBay cb: list) {
+//		total++;
+//		}
+//		System.out.println("Tổng chuyến bay xuất phát từ Sài Gòn (SGN):" +total);
+//	}
+    @Test
+    void cau7() {
+        System.out.println("=> Cau 07");
+        int total = 0;
+        List<MayBay> list = mayBayService.findLoaiMayBaysBoeing();
+        for (MayBay cb : list) {
+            total++;
+        }
+        System.out.println("Tổng loại máy báy Boeing:" + total);
+    }
 }

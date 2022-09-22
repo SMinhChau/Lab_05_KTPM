@@ -15,5 +15,8 @@ public interface MayBayRepository extends JpaRepository<MayBay, String> {
             nativeQuery = true)
     List<MayBay> findMayBaysTamBayFrom();
 
-
+    @Query(
+            value = "SELECT * FROM maybay u WHERE u.loai like N'%Boeing%'",
+            nativeQuery = true)
+    List<MayBay> findLoaiMayBaysBoeing();
 }

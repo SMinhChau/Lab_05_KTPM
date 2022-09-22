@@ -8,4 +8,6 @@ import java.util.List;
 @Service
 public interface MayBayService{
     List<MayBay> findMayBaysTamBayFrom();
+
+    List<MayBay> findLoaiMayBaysBoeing();
 }
