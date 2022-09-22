@@ -15,4 +15,7 @@ public interface ChuyenBayService {
 
     List<ChuyenBay> findChuyenBaysFromSGToBuonMaThuoc();
 
+    List<ChuyenBay> totalsChuyenBaysFromSGN();
+
+
 }

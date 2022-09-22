@@ -22,4 +22,9 @@ public interface ChuyenBayRepository extends JpaRepository<ChuyenBay, String> {
             value = "SELECT * FROM chuyenbay u WHERE u.gaden like N'SGN' and u.gadi like N'BMV'",
             nativeQuery = true)
     List<ChuyenBay> findChuyenBaysFromSGToBuonMaThuoc();
+
+    @Query(
+            value = "SELECT * FROM chuyenbay u WHERE u.gaden like N'SGN'",
+            nativeQuery = true)
+    List<ChuyenBay> totalsChuyenBaysFromSGN();
 }

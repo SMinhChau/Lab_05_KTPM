@@ -1,5 +1,6 @@
 package com.example.apilab05;
 
+import com.example.apilab05.model.ChuyenBay;
 import com.example.apilab05.repository.ChuyenBayRepository;
 import com.example.apilab05.repository.NhanVienRepository;
 import com.example.apilab05.service.ChuyenBayService;
@@ -8,6 +9,8 @@ import com.example.apilab05.service.NhanVienService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import java.util.List;
 
 @SpringBootTest
 class Apilab05ApplicationTests {
@@ -53,12 +56,23 @@ class Apilab05ApplicationTests {
 //			System.out.println(cb.toString());
 //		});
 //	}
+//
+//	@Test
+//	void cau05() {
+//		System.out.println("=> Cau 05");
+//		chuyenBayService.findChuyenBaysFromSGToBuonMaThuoc().stream().forEach(cb -> {
+//			System.out.println(cb.toString());
+//		});
+//	}
 
 	@Test
-	void cau0() {
-		System.out.println("=> Cau 05");
-		chuyenBayService.findChuyenBaysFromSGToBuonMaThuoc().stream().forEach(cb -> {
-			System.out.println(cb.toString());
-		});
+	void cau6() {
+		System.out.println("=> Cau 06");
+		int total=0;
+		List<ChuyenBay> list= chuyenBayService.totalsChuyenBaysFromSGN();
+		for (ChuyenBay cb: list) {
+		total++;
+		}
+		System.out.println("Tổng chuyến bay xuất phát từ Sài Gòn (SGN):" +total);
 	}
 }
