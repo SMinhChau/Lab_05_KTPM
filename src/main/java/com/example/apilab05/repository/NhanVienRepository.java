@@ -16,5 +16,7 @@ public interface NhanVienRepository extends JpaRepository<NhanVien, String> {
             nativeQuery = true)
     List<NhanVien> findNhanViensLuong();
 
+    @Query(value = "SELECT SUM(luong) FROM nhanvien", nativeQuery = true)
+    Float  getTotalSalaryAllNhanVien() ;
 
-}
+    }

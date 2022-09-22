@@ -76,14 +76,22 @@ class Apilab05ApplicationTests {
 //		}
 //		System.out.println("Tổng chuyến bay xuất phát từ Sài Gòn (SGN):" +total);
 //	}
+
+//    @Test
+//    void cau7() {
+//        System.out.println("=> Cau 07");
+//        int total = 0;
+//        List<MayBay> list = mayBayService.findLoaiMayBaysBoeing();
+//        for (MayBay cb : list) {
+//            total++;
+//        }
+//        System.out.println("Tổng loại máy báy Boeing:" + total);
+//    }
+
     @Test
-    void cau7() {
-        System.out.println("=> Cau 07");
-        int total = 0;
-        List<MayBay> list = mayBayService.findLoaiMayBaysBoeing();
-        for (MayBay cb : list) {
-            total++;
-        }
-        System.out.println("Tổng loại máy báy Boeing:" + total);
+    void cau8() {
+        System.out.println("=> Cau 08");
+      Float total = nhanVienService.getTotalSalaryAllNhanVien();
+        System.out.println("Tổng số lương phải trả cho các nhân viên: " + total);
     }
 }

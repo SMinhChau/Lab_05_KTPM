@@ -13,6 +13,7 @@ import java.util.List;
 @Service
 public class NhanVienImpl implements NhanVienService {
 
+
     @Autowired
     private NhanVienRepository nhanVienRepository;
 
@@ -20,5 +21,10 @@ public class NhanVienImpl implements NhanVienService {
     @Override
     public List<NhanVien> findNhanViensLuong() {
         return nhanVienRepository.findNhanViensLuong();
+    }
+
+    @Override
+    public Float getTotalSalaryAllNhanVien() {
+       return nhanVienRepository.getTotalSalaryAllNhanVien();
     }
 }
