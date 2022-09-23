@@ -27,4 +27,9 @@ public class NhanVienImpl implements NhanVienService {
     public Float getTotalSalaryAllNhanVien() {
        return nhanVienRepository.getTotalSalaryAllNhanVien();
     }
+
+    @Override
+    public List<NhanVien> findNhanViensGroupByLoaiMayBays() {
+        return nhanVienRepository.findNhanViensGroupByLoaiMayBays();
+    }
 }

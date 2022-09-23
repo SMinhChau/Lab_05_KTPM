@@ -10,15 +10,16 @@ import java.io.Serializable;
 @Table(name = "chungnhan")
 @Data
 @IdClass(ChungNhanPK.class)
-public class ChungNhan implements Serializable {
+public class ChungNhan {
+
+    @Id
+    @ManyToOne
+    @JoinColumn(name = "ma_mb")
+    private MayBay mamb;
 
     @Id
     @ManyToOne
     @JoinColumn(name = "ma_mv")
     private NhanVien manv;
 
-    @Id
-    @ManyToOne
-    @JoinColumn(name = "ma_mb")
-    private MayBay mamb;
 }

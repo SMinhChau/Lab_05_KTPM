@@ -88,10 +88,18 @@ class Apilab05ApplicationTests {
 //        System.out.println("Tổng loại máy báy Boeing:" + total);
 //    }
 
+//    @Test
+//    void cau8() {
+//        System.out.println("=> Cau 08");
+//      Float total = nhanVienService.getTotalSalaryAllNhanVien();
+//        System.out.println("Tổng số lương phải trả cho các nhân viên: " + total);
+//    }
+
     @Test
-    void cau8() {
-        System.out.println("=> Cau 08");
-      Float total = nhanVienService.getTotalSalaryAllNhanVien();
-        System.out.println("Tổng số lương phải trả cho các nhân viên: " + total);
+    void cau9() {
+        System.out.println("=> Cau 09");
+        nhanVienService.findNhanViensGroupByLoaiMayBays().stream().forEach(cb -> {
+			System.out.println(cb.getManv().toString() +":" +cb.getTen().toString() );
+		});
     }
 }

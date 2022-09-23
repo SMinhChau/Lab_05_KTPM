@@ -1,17 +1,24 @@
 package com.example.apilab05.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "nhanvien")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class NhanVien {
     @Id
     @Column(name = "manv")
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String manv;
 
     @Column(name = "ten")
@@ -19,4 +26,6 @@ public class NhanVien {
 
     @Column(name = "luong")
     private Long luong;
+
+
 }
