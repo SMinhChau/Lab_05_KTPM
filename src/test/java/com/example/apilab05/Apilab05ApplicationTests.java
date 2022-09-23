@@ -103,11 +103,19 @@ class Apilab05ApplicationTests {
 //		});
 //    }
 
+//    @Test
+//    void cau_10() {
+//        System.out.println("=> Cau 10");
+//        nhanVienService.findNhanViensByMaSo().stream().forEach(cb -> {
+//            System.out.println(cb.getTen().toString());
+//        });
+//    }
+
     @Test
-    void cau_10() {
-        System.out.println("=> Cau 10");
-        nhanVienService.findNhanViensByMaSo().stream().forEach(cb -> {
-            System.out.println(cb.getTen().toString());
+    void cau_11() {
+        System.out.println("=> Cau 11");
+        mayBayService.findMayBaysByTenNhanVien().stream().forEach(cb -> {
+            System.out.println(cb.getMamb().toString());
         });
     }
 }

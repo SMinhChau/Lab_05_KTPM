@@ -10,4 +10,6 @@ public interface MayBayService{
     List<MayBay> findMayBaysTamBayFrom();
 
     List<MayBay> findLoaiMayBaysBoeing();
+
+    List<MayBay> findMayBaysByTenNhanVien();
 }

@@ -23,4 +23,9 @@ public class MayBayImpl implements MayBayService {
     public List<MayBay> findLoaiMayBaysBoeing() {
         return mayBayRepository.findLoaiMayBaysBoeing();
     }
+
+    @Override
+    public List<MayBay> findMayBaysByTenNhanVien() {
+        return mayBayRepository.findMayBaysByTenNhanVien();
+    }
 }
