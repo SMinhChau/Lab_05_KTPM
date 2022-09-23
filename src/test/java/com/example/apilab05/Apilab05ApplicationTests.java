@@ -95,11 +95,19 @@ class Apilab05ApplicationTests {
 //        System.out.println("Tổng số lương phải trả cho các nhân viên: " + total);
 //    }
 
+//    @Test
+//    void cau9() {
+//        System.out.println("=> Cau 09");
+//        nhanVienService.findNhanViensGroupByLoaiMayBays().stream().forEach(cb -> {
+//			System.out.println(cb.getManv().toString() +":" +cb.getTen().toString() );
+//		});
+//    }
+
     @Test
-    void cau9() {
-        System.out.println("=> Cau 09");
-        nhanVienService.findNhanViensGroupByLoaiMayBays().stream().forEach(cb -> {
-			System.out.println(cb.getManv().toString() +":" +cb.getTen().toString() );
-		});
+    void cau_10() {
+        System.out.println("=> Cau 10");
+        nhanVienService.findNhanViensByMaSo().stream().forEach(cb -> {
+            System.out.println(cb.getTen().toString());
+        });
     }
 }

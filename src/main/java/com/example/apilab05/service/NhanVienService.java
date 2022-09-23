@@ -13,4 +13,6 @@ public interface NhanVienService {
     Float getTotalSalaryAllNhanVien();
 
     List<NhanVien> findNhanViensGroupByLoaiMayBays();
+
+    List<NhanVien> findNhanViensByMaSo();
 }
