@@ -8,6 +8,9 @@ import java.util.List;
 
 @Service
 public interface NhanVienService {
+
+    List<NhanVien> findAllNhanViens();
+
     List<NhanVien> findNhanViensLuong();
 
     Float getTotalSalaryAllNhanVien();

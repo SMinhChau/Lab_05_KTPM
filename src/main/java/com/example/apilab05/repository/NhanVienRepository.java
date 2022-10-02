@@ -12,7 +12,7 @@ import java.util.List;
 public interface NhanVienRepository extends JpaRepository<NhanVien, String> {
 
     @Query(
-            value = "SELECT * FROM nhanvien u WHERE u.luong<10000",
+            value = "SELECT * FROM nhanvien n WHERE n.luong < 10000",
             nativeQuery = true)
     List<NhanVien> findNhanViensLuong();
 

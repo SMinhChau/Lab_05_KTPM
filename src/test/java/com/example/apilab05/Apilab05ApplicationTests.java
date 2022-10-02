@@ -66,16 +66,16 @@ class Apilab05ApplicationTests {
 //		});
 //	}
 
-    //	@Test
-//	void cau6() {
-//		System.out.println("=> Cau 06");
-//		int total=0;
-//		List<ChuyenBay> list= chuyenBayService.totalsChuyenBaysFromSGN();
-//		for (ChuyenBay cb: list) {
-//		total++;
-//		}
-//		System.out.println("Tổng chuyến bay xuất phát từ Sài Gòn (SGN):" +total);
-//	}
+    	@Test
+	void cau6() {
+		System.out.println("=> Cau 06");
+		int total=0;
+		List<ChuyenBay> list= chuyenBayService.totalsChuyenBaysFromSGN();
+		for (ChuyenBay cb: list) {
+		total++;
+		}
+		System.out.println("Tổng chuyến bay xuất phát từ Sài Gòn (SGN):" +total);
+	}
 
 //    @Test
 //    void cau7() {
@@ -111,11 +111,11 @@ class Apilab05ApplicationTests {
 //        });
 //    }
 
-    @Test
-    void cau_11() {
-        System.out.println("=> Cau 11");
-        mayBayService.findMayBaysByTenNhanVien().stream().forEach(cb -> {
-            System.out.println(cb.getMamb().toString());
-        });
-    }
+//    @Test
+//    void cau_11() {
+//        System.out.println("=> Cau 11");
+//        mayBayService.findMayBaysByTenNhanVien().stream().forEach(cb -> {
+//            System.out.println(cb.getMamb().toString());
+//        });
+//    }
 }

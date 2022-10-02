@@ -10,10 +10,11 @@ import java.util.Optional;
 
 @Repository
 public interface ChuyenBayRepository extends JpaRepository<ChuyenBay, String> {
+
     List<ChuyenBay> findChuyenBaysByGaden(String gaden);
 
     @Query(
-            value = "SELECT * FROM chuyenbay u WHERE u.dodai<10000 and u.dodai>8000",
+            value = "SELECT * FROM chuyenbay u WHERE u.do dai<10000 and u.dodai>8000",
             nativeQuery = true)
     List<ChuyenBay> findChuyenBaysDoDai();
 

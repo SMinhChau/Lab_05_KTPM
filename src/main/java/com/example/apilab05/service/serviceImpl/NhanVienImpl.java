@@ -19,6 +19,11 @@ public class NhanVienImpl implements NhanVienService {
 
 
     @Override
+    public List<NhanVien> findAllNhanViens() {
+        return nhanVienRepository.findAll();
+    }
+
+    @Override
     public List<NhanVien> findNhanViensLuong() {
         return nhanVienRepository.findNhanViensLuong();
     }
